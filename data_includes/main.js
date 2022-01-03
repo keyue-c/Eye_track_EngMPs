@@ -1,5 +1,6 @@
 PennController.ResetPrefix(null) // Keep this here
 var showProgressBar = false;
+DebugOff()
 
 Sequence("welcome", randomize("experiment"), SendResults(), "end")
 
@@ -11,10 +12,10 @@ Sequence("welcome", randomize("experiment"), SendResults(), "end")
 //       because the command EyeTrackerURL below points to a dummy URL
 
 // Preload pictures
-PreloadZip("https://raw.githubusercontent.com/keyue-c/Eye_track_EngMPs/main/chunk_includes/pictures1.zip");
-PreloadZip("https://raw.githubusercontent.com/keyue-c/Eye_track_EngMPs/main/chunk_includes/pictures2.zip");
+PreloadZip("https://raw.githubusercontent.com/keyue-c/Eye_track_EngMPs/master/chunk_includes/pictures1.zip");
+PreloadZip("https://raw.githubusercontent.com/keyue-c/Eye_track_EngMPs/master/chunk_includes/pictures2.zip");
 // Preload audio recordings
-PreloadZip("https://raw.githubusercontent.com/keyue-c/Eye_track_EngMPs/main/chunk_includes/recordings.zip");
+PreloadZip("https://raw.githubusercontent.com/keyue-c/Eye_track_EngMPs/master/chunk_includes/recordings.zip");
 
 // Replace the URL with one that points to a PHP script that you uploaded to your webserver
 // see: https://doc.pcibex.net/how-to-guides/collecting-eyetracking-data/#php-script
